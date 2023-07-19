@@ -9,8 +9,11 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
   
-  getData(data:NgForm){
-    console.log(data);
-  }
+  toggleTitle:string='Toggle Element';
+  toggleBtnText:string='Click';
+  display:boolean=false;
 
+  toggleFun(){
+this.display=!this.display;
+  }
 }

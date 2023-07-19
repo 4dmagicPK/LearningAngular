@@ -1,12 +1,4 @@
+<h1>{{toggleTitle}}</h1>
+<button (click)="toggleFun()" class="btn btn-primary">{{toggleBtnText}}</button>
 
-<form action="" #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
-
-   <input type="text" ngModel name="name">
-   <br><br>
-   <input type="email" ngModel name="email">
-   <br><br>
-
-   <button class="btn btn-primary">Submit</button>
-
-</form>
-
+<p *ngIf="display">Element</p>
