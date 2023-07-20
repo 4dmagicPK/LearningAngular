@@ -6,9 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  data: string = '';
-  getValue(item: any) {
-    this.data = item;
-    console.log(item);
-  }
+ 
+  data:string="Shoaib Akhter";
+  
+  todayDay:string=Date();
+
+  title:string='Advanced Angular';
+  titleObj:{}={name:"Shoaib",age:54}
 }
